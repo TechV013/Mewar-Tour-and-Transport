@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "name": "mewar-tour-and-transport",
   "framework": "nextjs",
   "installCommand": "npm ci",
   "buildCommand": "npm run build"
