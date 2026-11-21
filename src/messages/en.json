@@ -1,0 +1,524 @@
+{
+  "brand": {
+    "name": "MEWAR TOUR AND TRANSPORT",
+    "short": "MTT"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "viewDetails": "View Details",
+    "exploreMore": "Explore More",
+    "learnMore": "Learn More",
+    "requestQuotation": "Request a Quotation",
+    "getInTouch": "Get in Touch",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "required": "Required",
+    "optional": "Optional",
+    "yes": "Yes",
+    "no": "No",
+    "sampleData": "Illustrative listing — final specifications are published after verification.",
+    "notProvided": "To be confirmed",
+    "photoPending": "Photography to be added"
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "body": "That page could not be loaded right now. Please try again.",
+    "retry": "Try again",
+    "home": "Back to home"
+  },
+  "nav": {
+    "home": "Home",
+    "taxiServices": "Taxi Services",
+    "busCharter": "Bus Charter",
+    "carRentals": "Car Rentals",
+    "ourFleet": "Our Fleet",
+    "corporateTransport": "Corporate Transport",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "faqs": "FAQs",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "header": {
+    "languageLabel": "Language",
+    "english": "English",
+    "hindi": "हिन्दी",
+    "phoneLabel": "Call us",
+    "whatsappLabel": "Chat on WhatsApp",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "eyebrow": "Premium transport across India",
+    "headline": "Every Journey Deserves a Better Ride.",
+    "support": "Reliable transportation, premium rentals and comfortable travel for every occasion.",
+    "primaryCta": "Book Your Ride",
+    "secondaryCta": "Explore Our Fleet",
+    "note": "Every booking is confirmed only after availability is checked.",
+    "artAlt": "Premium vehicle on a Rajasthan road in golden-hour light"
+  },
+  "booking": {
+    "title": "Plan your journey",
+    "subtitle": "Share a few details. Our team checks availability and sends a quotation — no payment needed to enquire.",
+    "badge": "Quote-first booking",
+    "steps": {
+      "details": "Journey details",
+      "contact": "Contact details"
+    },
+    "continue": "Continue",
+    "continueNote": "No payment needed to enquire",
+    "back": "Back to journey details",
+    "tabs": {
+      "taxi": "Taxi",
+      "bus": "Bus Charter",
+      "car": "Car Rental"
+    },
+    "taxi": {
+      "tripType": "Trip type",
+      "tripTypes": {
+        "oneWay": "One-way",
+        "roundTrip": "Round-trip",
+        "local": "Local",
+        "airport": "Airport"
+      },
+      "pickup": "Pickup location",
+      "pickupPlaceholder": "City, airport or area",
+      "destination": "Destination",
+      "destinationPlaceholder": "City or area",
+      "pickupDate": "Pickup date",
+      "pickupTime": "Pickup time",
+      "returnDate": "Return date",
+      "passengers": "Number of passengers",
+      "vehiclePreference": "Vehicle preference",
+      "requirements": "Additional requirements",
+      "requirementsPlaceholder": "Luggage, child seat, accessibility or anything else we should know"
+    },
+    "bus": {
+      "pickup": "Pickup location",
+      "pickupPlaceholder": "City or area",
+      "destination": "Destination",
+      "destinationPlaceholder": "City or area",
+      "stops": "Additional stops",
+      "stopsPlaceholder": "List any intermediate stops, separated by commas",
+      "journeyDate": "Journey date",
+      "returnDate": "Return date",
+      "passengers": "Number of passengers",
+      "seating": "Seating capacity preference",
+      "ac": "AC / Non-AC",
+      "acOptions": {
+        "ac": "AC",
+        "nonAc": "Non-AC",
+        "either": "Either"
+      },
+      "purpose": "Purpose of journey",
+      "purposePlaceholder": "Wedding, pilgrimage, school trip, corporate event, tourism...",
+      "requirements": "Additional requirements",
+      "requirementsPlaceholder": "Tell us about luggage, timings or special arrangements"
+    },
+    "car": {
+      "rentalType": "Rental type",
+      "rentalTypes": {
+        "withDriver": "With driver",
+        "selfDrive": "Self-drive"
+      },
+      "pickup": "Pickup location",
+      "pickupPlaceholder": "City, airport or area",
+      "dropoff": "Drop-off location",
+      "dropoffPlaceholder": "Same as pickup if not decided",
+      "startDate": "Start date",
+      "startTime": "Start time",
+      "returnDate": "Return date",
+      "returnTime": "Return time",
+      "category": "Vehicle category",
+      "passengers": "Number of passengers",
+      "requirements": "Additional requirements",
+      "requirementsPlaceholder": "Duration, luggage, preferred features or anything else"
+    },
+    "vehicleOptions": {
+      "noPreference": "No preference",
+      "sedan": "Sedan",
+      "suv": "SUV",
+      "muv": "MUV",
+      "tempoTraveller": "Tempo Traveller",
+      "miniBus": "Mini Bus",
+      "luxuryBus": "Luxury Bus"
+    },
+    "contact": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "phone": "Mobile number",
+      "phonePlaceholder": "10-digit mobile number",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "optional": "Optional — we may need it to send your quotation"
+    },
+    "consent": "I agree to be contacted about this enquiry. No booking is confirmed until I receive a confirmation.",
+    "submit": "Send Enquiry",
+    "submitting": "Sending enquiry...",
+    "success": {
+      "title": "Enquiry received",
+      "body": "Thank you. Our team will check availability and get in touch with your quotation.",
+      "reference": "Enquiry reference",
+      "another": "Submit another enquiry",
+      "note": "Please keep this reference number for follow-up."
+    },
+    "assurance": {
+      "noPayment": "No payment needed to enquire",
+      "review": "Every enquiry is reviewed by our team",
+      "quote": "Quotation follows availability confirmation"
+    },
+    "errors": {
+      "required": "This field is required",
+      "nameRequired": "Please enter your name",
+      "phoneRequired": "Please enter your mobile number",
+      "phoneInvalid": "Enter a valid 10-digit Indian mobile number",
+      "emailInvalid": "Enter a valid email address",
+      "pickupRequired": "Please enter a pickup location",
+      "destinationRequired": "Please enter a destination",
+      "dateRequired": "Please select a date",
+      "timeRequired": "Please select a time",
+      "returnAfterPickup": "Return date must be on or after the pickup date",
+      "passengersInvalid": "Enter 1 to 60 passengers",
+      "consentRequired": "Please agree to be contacted",
+      "generic": "We could not send your enquiry. Please try again or call us."
+    }
+  },
+  "trust": {
+    "eyebrow": "Why enquire with us",
+    "title": "A transport partner you can rely on",
+    "items": {
+      "fleet": {
+        "title": "Our Own Fleet",
+        "description": "We operate vehicles we own and manage, with complete oversight of quality and service."
+      },
+      "nationwide": {
+        "title": "Nationwide Service Enquiries",
+        "description": "Planning a trip anywhere in India? Tell us your route and we will check what we can arrange."
+      },
+      "assistance": {
+        "title": "Booking Assistance",
+        "description": "A real person reviews every enquiry, confirms availability and guides you through the quotation."
+      },
+      "managed": {
+        "title": "Managed Transportation",
+        "description": "From a single transfer to recurring corporate travel, your requirements are handled end to end."
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "What we do",
+    "title": "Travel, arranged around you",
+    "subtitle": "Choose the service that fits your journey. Every request is reviewed before it is confirmed.",
+    "items": {
+      "taxi": {
+        "title": "Taxi Services",
+        "description": "One-way, round-trip, local and airport journeys with a chauffeur and a vehicle that fits your plans.",
+        "cta": "Explore taxi services"
+      },
+      "bus": {
+        "title": "Bus Charter",
+        "description": "Private buses for weddings, pilgrimages, schools, corporate groups and group tourism — never seat-by-seat ticketing.",
+        "cta": "Explore bus charter"
+      },
+      "chauffeur": {
+        "title": "Chauffeur-Driven Rentals",
+        "description": "Hourly, daily and multi-day rentals with a professional driver for business and leisure.",
+        "cta": "Explore chauffeur rentals"
+      },
+      "selfDrive": {
+        "title": "Self-Drive Rentals",
+        "description": "Drive yourself with a clear eligibility check, rental agreement and documented handover.",
+        "cta": "Explore self-drive rentals"
+      }
+    }
+  },
+  "fleet": {
+    "eyebrow": "Our fleet",
+    "title": "The right vehicle for every group",
+    "subtitle": "Browse the categories we arrange. Final vehicle details, images and availability are published as they are verified.",
+    "categories": {
+      "sedan": "Sedan",
+      "suv": "SUV",
+      "muv": "MUV",
+      "tempoTraveller": "Tempo Traveller",
+      "miniBus": "Mini Bus",
+      "luxuryBus": "Luxury Bus"
+    },
+    "seats": "Seats",
+    "luggage": "Luggage",
+    "ac": "AC",
+    "viewAll": "View our fleet",
+    "specs": "Specifications will be published with verified vehicle details."
+  },
+  "requirements": {
+    "eyebrow": "Popular travel requirements",
+    "title": "Built for real journeys",
+    "items": {
+      "family": "Family Trips",
+      "pilgrimage": "Pilgrimage Travel",
+      "airport": "Airport Transfers",
+      "corporate": "Corporate Travel",
+      "weddings": "Weddings & Events",
+      "tourism": "Group Tourism"
+    }
+  },
+  "corporate": {
+    "eyebrow": "Corporate transportation",
+    "title": "Transportation that works around your schedule",
+    "description": "Employee transport, corporate events, institutional travel and recurring requirements — handled with one point of contact and a clear quotation.",
+    "items": {
+      "employee": "Employee transport",
+      "events": "Corporate events",
+      "institutional": "Institutional transportation",
+      "group": "Group transportation",
+      "custom": "Customized requirements"
+    },
+    "cta": "Request Corporate Quotation"
+  },
+  "why": {
+    "eyebrow": "Why choose us",
+    "title": "Details that make the difference",
+    "items": {
+      "ownFleet": "Vehicles we own and manage",
+      "verified": "Availability checked before confirmation",
+      "transparent": "Clear quotation before any payment",
+      "personal": "A dedicated point of contact",
+      "flexible": "Fleet options for small and large groups",
+      "support": "Assistance from enquiry to trip completion"
+    }
+  },
+  "process": {
+    "eyebrow": "How booking works",
+    "title": "Four simple steps",
+    "steps": {
+      "one": "Select your service",
+      "two": "Share your journey details",
+      "three": "Receive availability and a quotation",
+      "four": "Confirm your booking"
+    },
+    "note": "No vehicle is promised and no payment is requested until your booking is confirmed."
+  },
+  "testimonials": {
+    "eyebrow": "Customer testimonials",
+    "title": "Stories from the road",
+    "emptyTitle": "Real feedback, coming soon",
+    "emptyBody": "We publish customer feedback only after it has been received and verified. Please check back later."
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Answers before you enquire",
+    "items": {
+      "booking": {
+        "q": "Does submitting an enquiry confirm my booking?",
+        "a": "No. An enquiry is a request. Our team checks vehicle availability, route and requirements before sending a quotation. Your booking is confirmed only after you accept the quotation and the payment or advance is recorded."
+      },
+      "payment": {
+        "q": "Do I need to pay to submit an enquiry?",
+        "a": "No. Enquiries are free. Payment details are shared only after availability is confirmed and a quotation has been accepted."
+      },
+      "areas": {
+        "q": "Do you operate across India?",
+        "a": "We accept service enquiries across India. Actual availability depends on the cities, routes and vehicles configured by our administration at the time of your journey."
+      },
+      "bus": {
+        "q": "Can I book a single seat on a bus?",
+        "a": "No. Our bus service is private charter for the complete vehicle. We do not sell individual bus seats or tickets."
+      },
+      "selfDrive": {
+        "q": "What is needed for a self-drive rental?",
+        "a": "You will be asked for a valid driving licence and identity documents, which are verified as part of the rental process. A security deposit and a rental agreement apply. Document handling is completed through a secure process."
+      },
+      "changes": {
+        "q": "Can I change or cancel my trip?",
+        "a": "Changes and cancellations are handled according to the cancellation policy shared with your quotation. Contact us with your enquiry reference and we will explain the options."
+      }
+    },
+    "more": "Have another question?"
+  },
+  "contact": {
+    "eyebrow": "Contact us",
+    "title": "Let's plan your next journey",
+    "description": "Tell us what you need and our team will get back to you with availability and a quotation.",
+    "whatsappTitle": "Chat on WhatsApp",
+    "whatsappBody": "Share your requirement and get a quick response.",
+    "phoneTitle": "Call us",
+    "phoneBody": "Speak to our team about your journey.",
+    "formTitle": "Send a quick message",
+    "name": "Your name",
+    "phone": "Mobile number",
+    "email": "Email address",
+    "message": "Your requirement",
+    "messagePlaceholder": "Tell us about your journey, dates and group size",
+    "submit": "Send Message",
+    "success": "Thank you. We have received your message and will get in touch shortly.",
+    "requestQuotation": "Request a Quotation"
+  },
+  "footer": {
+    "description": "Premium taxi, private bus charter and car rental services for journeys across India.",
+    "columns": {
+      "explore": "Explore",
+      "services": "Services",
+      "legal": "Legal",
+      "contact": "Contact"
+    },
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "address": "Address",
+    "detailsPending": "Details will be published once confirmed.",
+    "social": "Social",
+    "language": "Language",
+    "copyright": "All rights reserved."
+  },
+  "pages": {
+    "taxi": {
+      "title": "Taxi Services",
+      "description": "One-way, round-trip, local and airport journeys with a vehicle and chauffeur arranged around your plans.",
+      "introTitle": "Travel on your schedule",
+      "introBody": "Share your route and timing. Our team checks what is available and sends a clear quotation before anything is confirmed.",
+      "typesTitle": "Choose your journey type",
+      "typesBody": "Each taxi request is reviewed individually. Select the option closest to your plans and add the details in the enquiry form.",
+      "includesTitle": "Every taxi enquiry includes",
+      "includes": {
+        "route": "Route and pickup timing review",
+        "vehicle": "Vehicle option matched to your group",
+        "quote": "Quotation after availability is checked",
+        "support": "A point of contact until your trip is confirmed"
+      }
+    },
+    "taxiTypes": {
+      "oneWay": {
+        "title": "One-way taxi",
+        "description": "Point-to-point travel when you need to get from one city, airport or area to another without a return leg.",
+        "eyebrow": "One-way transfers",
+        "benefits": {
+          "direct": "Direct route planning from pickup to drop-off",
+          "timing": "Pickup timing built around your schedule",
+          "luggage": "Tell us about luggage or special requirements",
+          "quote": "No payment until availability and a quotation are confirmed"
+        }
+      },
+      "roundTrip": {
+        "title": "Round-trip taxi",
+        "description": "Travel out and back in one plan, with a return date and timing that fit your schedule.",
+        "eyebrow": "Round-trip journeys",
+        "benefits": {
+          "combined": "Outbound and return travel in one enquiry",
+          "return": "Return timing aligned with your plans",
+          "contact": "One point of contact for the full journey",
+          "quote": "Quotation after availability is checked"
+        }
+      },
+      "local": {
+        "title": "Local taxi",
+        "description": "Hourly or full-day travel within a city for meetings, errands, sightseeing and local commitments.",
+        "eyebrow": "Local journeys",
+        "benefits": {
+          "flexible": "Flexible route within the city",
+          "duration": "Hourly or full-day enquiries",
+          "stops": "Multiple stops in a single request",
+          "quote": "Quotation based on your plan"
+        }
+      },
+      "airport": {
+        "title": "Airport taxi",
+        "description": "Arrival and departure transfers with pickup timing coordinated around your flight details.",
+        "eyebrow": "Airport transfers",
+        "benefits": {
+          "flight": "Pickup planning around your flight timing",
+          "terminal": "Terminal and area details captured up front",
+          "luggage": "Tell us about luggage in the same enquiry",
+          "review": "Confirmed only after our team reviews it"
+        }
+      }
+    },
+    "bus": {
+      "title": "Bus Charter",
+      "description": "Private buses for weddings, pilgrimages, schools, corporate groups and group tourism — never seat-by-seat ticketing.",
+      "introTitle": "One vehicle for the whole group",
+      "introBody": "Tell us where you are going, when and how many people are travelling. We will check a suitable vehicle and send a quotation for the complete charter.",
+      "usesTitle": "Common charter requirements",
+      "usesBody": "Weddings, pilgrimages, school trips, corporate events and group tourism — every request is reviewed on its own details.",
+      "includesTitle": "What a charter enquiry covers",
+      "includes": {
+        "vehicle": "Full-vehicle charter, not individual seats",
+        "route": "Route and intermediate stops",
+        "group": "Group size and seating preference",
+        "timing": "Journey and return timing",
+        "requirements": "Luggage and special arrangements"
+      }
+    },
+    "car": {
+      "title": "Car Rentals",
+      "description": "Chauffeur-driven and self-drive rentals for business and leisure, with clear terms before confirmation.",
+      "introTitle": "Choose how you want to travel",
+      "introBody": "Share your requirements for a chauffeur-driven or self-drive rental. Our team checks availability and sends a quotation before anything is confirmed.",
+      "withDriverTitle": "With driver",
+      "selfDriveTitle": "Self-drive",
+      "noteTitle": "Before you enquire",
+      "note": "Self-drive requests require a valid driving licence and identity documents. A rental agreement and security deposit apply; details are shared during the rental process."
+    },
+    "carTypes": {
+      "withDriver": {
+        "title": "Chauffeur-driven rental",
+        "description": "Hourly, daily and multi-day rentals with a professional driver for business and leisure.",
+        "eyebrow": "With driver",
+        "benefits": {
+          "driver": "Travel with a professional driver",
+          "duration": "Hourly, daily or multi-day enquiries",
+          "purpose": "Routes for business and leisure",
+          "quote": "Quotation after availability is checked"
+        }
+      },
+      "selfDrive": {
+        "title": "Self-drive rental",
+        "description": "Drive yourself with a clear eligibility check, rental agreement and documented handover.",
+        "eyebrow": "Self-drive",
+        "benefits": {
+          "documents": "Valid driving licence and identity documents checked",
+          "agreement": "Rental agreement and security deposit",
+          "handover": "Documented vehicle handover",
+          "review": "Confirmed only after our team reviews it"
+        }
+      }
+    },
+    "corporate": {
+      "title": "Corporate Transport",
+      "description": "Employee transport, corporate events, institutional travel and recurring requirements with one point of contact.",
+      "introTitle": "Transport that fits your working day",
+      "introBody": "Share a one-off or recurring requirement. Our team reviews the route and availability, then sends a clear quotation.",
+      "capabilitiesTitle": "What we can arrange",
+      "capabilitiesBody": "Employee transport, corporate events, institutional travel, group transportation and customized requirements.",
+      "includesTitle": "How corporate enquiries are handled",
+      "includes": {
+        "single": "One enquiry for single or recurring needs",
+        "review": "Route and availability reviewed by our team",
+        "quote": "Clear quotation before confirmation",
+        "contact": "A dedicated point of contact"
+      }
+    },
+    "fleet": {
+      "title": "Our Fleet",
+      "description": "Browse the vehicle categories we arrange. Final specifications, images and availability are published as they are verified.",
+      "introTitle": "Options for different group sizes",
+      "introBody": "From small families to larger groups, choose the closest category and share your requirements in the enquiry form.",
+      "noteTitle": "Verified details only",
+      "note": "Seat and luggage figures shown here are indicative. Final vehicle details are published after verification."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Tell us what you need and our team will get back to you with availability and a quotation."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "description": "Answers to the questions we hear most often before an enquiry."
+    }
+  },
+  "legal": {
+    "home": "Home",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "cancellation": "Cancellation Policy",
+    "pageTitle": "This page is being prepared",
+    "pageBody": "Official content will be published here after review. Please contact us if you need this information now."
+  }
+}

@@ -1,0 +1,60 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum EnquiryService {
+  TAXI
+  BUS
+  CAR
+  CONTACT
+}
+
+enum EnquiryStatus {
+  NEW
+  QUOTED
+  CONFIRMED
+  CANCELLED
+}
+
+model Enquiry {
+  id           String         @id @default(cuid())
+  reference    String         @unique
+  service      EnquiryService
+  name         String
+  phone        String
+  email        String?
+  details      Json
+  status       EnquiryStatus  @default(NEW)
+  notes        String?
+  quotedAmount Decimal?       @db.Decimal(10, 2)
+  // Generic payment link created outside this app; no provider integration.
+  paymentLink          String?
+  paymentReference     String?
+  paymentNote          String?
+  paymentLinkCreatedAt DateTime?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  events       EnquiryEvent[]
+
+  @@index([createdAt])
+  @@index([status])
+  @@index([phone])
+}
+
+model EnquiryEvent {
+  id         String         @id @default(cuid())
+  enquiryId  String
+  enquiry    Enquiry        @relation(fields: [enquiryId], references: [id], onDelete: Cascade)
+  fromStatus EnquiryStatus?
+  toStatus   EnquiryStatus
+  note       String?
+  actor      String         @default("admin")
+  createdAt  DateTime       @default(now())
+
+  @@index([enquiryId, createdAt])
+}

@@ -1,26 +1,163 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-navy: var(--navy);
+  --color-gold: var(--gold);
+  --color-ivory: var(--ivory);
+  --color-graphite: var(--graphite);
+  --color-gold-soft: var(--gold-soft);
+  --color-navy-soft: var(--navy-soft);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+  --font-mono: var(--font-mono);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --navy: #12263d;
+  --navy-soft: #1c3552;
+  --gold: #d6b16d;
+  --gold-soft: #f0e2c4;
+  --ivory: #f5f3ee;
+  --graphite: #343a40;
+
+  --background: #ffffff;
+  --foreground: #12263d;
+  --card: #ffffff;
+  --card-foreground: #12263d;
+  --popover: #ffffff;
+  --popover-foreground: #12263d;
+  --primary: #12263d;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f3ee;
+  --secondary-foreground: #12263d;
+  --muted: #f5f3ee;
+  --muted-foreground: #5d6672;
+  --accent: #d6b16d;
+  --accent-foreground: #12263d;
+  --destructive: #b42318;
+  --border: #e6e2d9;
+  --input: #e6e2d9;
+  --ring: #d6b16d;
+  --radius: 0.625rem;
+
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-manrope), var(--font-devanagari), var(--font-inter), sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html[lang="hi"] {
+  --font-body: var(--font-devanagari), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+  ::selection {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer utilities {
+  .container-site {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  .section-pad {
+    padding-block: 4.25rem;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .media-navy {
+    background:
+      radial-gradient(120% 90% at 85% 15%, rgba(214, 177, 109, 0.28) 0%, transparent 55%),
+      radial-gradient(90% 70% at 10% 90%, rgba(28, 53, 82, 0.95) 0%, transparent 70%),
+      linear-gradient(135deg, #12263d 0%, #1c3552 55%, #0d1a2b 100%);
+  }
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(245, 243, 238, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245, 243, 238, 0.035) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 78%);
+  }
+}
+
+@media (min-width: 640px) {
+  .container-site {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-site {
+    padding-inline: 2rem;
+  }
+  .section-pad {
+    padding-block: 6.5rem;
+  }
 }
