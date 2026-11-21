@@ -2,7 +2,9 @@
 
 This project is a Next.js 15 App Router app with Prisma. Deployment needs a
 Node.js 20.9+ runtime, an environment file, and a Postgres database for any
-enquiries you intend to keep.
+enquiries you intend to keep. `package.json` pins `engines.node >=20.9.0` and
+`.nvmrc` selects Node 22, so Vercel and GitHub Actions use the same major
+version as local development.
 
 ## Pre-flight checklist
 
@@ -45,18 +47,40 @@ requires a rebuild. Server-only values are read at process start.
 
 ## Vercel + Neon
 
+The repo is preconfigured for Vercel: `vercel.json` declares the Next.js
+framework, `npm ci` as the install command (keeps the lockfile authoritative)
+and `npm run build` as the build command. `postinstall` runs `prisma generate`
+on Vercel's Linux build machine, so the correct native query engine is bundled
+without committing generated files. Serverless functions use the Node.js
+runtime selected from `engines.node`.
+
 1. Create a Neon Postgres database and copy its pooled connection string.
-2. Import the repository into Vercel. Framework preset: Next.js.
-3. Add every variable from the table above under **Project Settings → Environment Variables**.
-4. Install the Vercel CLI and push the Prisma schema once against the database:
+2. Import the repository into Vercel. The preset is detected automatically; no
+   build settings need changing.
+3. Add every variable from the table above under **Project Settings → Environment Variables** for the environments you deploy (Production, and Preview if you want preview enquiries to persist). Use the pooled Neon URL for `DATABASE_URL`.
+4. Push the Prisma schema once against the database. Do this locally with the
+   production URL in the environment, or through a one-off Vercel CLI session:
 
    ```bash
    vercel env pull .env.local
    npm run db:push
    ```
 
-5. Deploy. The build command is `next build`; `postinstall` generates the Prisma client.
+   `db:push` is a one-time schema setup, not a build step. Re-run it only after
+   schema changes.
+5. Deploy with `git push` to the connected branch (or the Vercel **Deploy**
+   button). Every push gets a preview deployment when GitHub is connected.
 6. Open `/api/health` on the deployment. It must return `200` and `"status": "ok"`.
+   A `503` with a `DATABASE_URL` warning means the variable was not applied to
+   that environment.
+
+### Continuous integration
+
+`.github/workflows/ci.yml` runs on pushes and pull requests to `master`/`main`:
+lint, type check, env validation, security audit, production build and the
+regression suite. The build and tests run on Ubuntu, catching Linux-only issues
+before Vercel does. Enable branch protection in GitHub and require the `CI`
+check before merging so a broken build cannot auto-deploy.
 
 ## Self-hosted Node
 

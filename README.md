@@ -15,6 +15,8 @@ npm run dev
 
 Copy `.env.example` to `.env.local` and fill in the values you need. Never commit real credentials.
 
+Vercel-ready: `vercel.json`, Node 22 (`.nvmrc` / `engines`) and a GitHub Actions CI workflow are included. Import the repo into Vercel, set the environment variables, run `npm run db:push` once against Neon, and push. See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
 ## Commands
 
 | Command | Purpose |
