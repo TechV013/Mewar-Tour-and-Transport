@@ -2,9 +2,10 @@
 
 This project is a Next.js 15 App Router app with Prisma. Deployment needs a
 Node.js 20.9+ runtime, an environment file, and a Postgres database for any
-enquiries you intend to keep. `package.json` pins `engines.node` to `22.x` and
-`.nvmrc` selects Node 22, so Vercel and GitHub Actions use the same major
-version as local development.
+enquiries you intend to keep. `package.json` pins `engines.node` to `24.x` and
+`.nvmrc` selects Node 24, so Vercel and GitHub Actions use the same major
+version (and npm 11) as local development. Keep this in sync with the lockfile:
+`npm ci` on a different npm major can reject it.
 
 ## Pre-flight checklist
 
